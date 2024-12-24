@@ -1,2 +1,0 @@
-# React Session Class-notes
-
