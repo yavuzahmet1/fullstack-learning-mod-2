@@ -1,8 +1,14 @@
+import { Navbar } from "./Navbar";
+
+import React from 'react'
+
 function Header() {
     return (
-
-        <h1>My first React Project</h1>
-    );
+        <div>
+            <Navbar></Navbar>
+            < h1 > My first React Project</ h1>
+        </div>
+    )
 }
 
-export default Header;
+export default Header

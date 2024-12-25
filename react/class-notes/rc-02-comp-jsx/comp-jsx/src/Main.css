@@ -1,0 +1,13 @@
+.par {
+    color: aquamarine;
+}
+
+.par2 {
+    color: blueviolet;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    border-radius: 2rem;
+}
