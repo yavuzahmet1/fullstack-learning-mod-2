@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <h1>LANGUAGES</h1>
       {
-        data.map(item => (
-          < Card key={item.id} language={item.language} img={item.img} />
+        data.map(({ id, language, img }) => (
+          < Card key={id} language={language} img={img} />
         ))
       }
 
