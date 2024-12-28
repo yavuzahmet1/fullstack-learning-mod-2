@@ -1,7 +1,7 @@
 @import "../../scss/variables";
+@import "../../scss/mixins";
 
 .header {
-
     text-align: center;
     padding: 0.5rem;
     margin-top: 5rem;
@@ -14,11 +14,13 @@
     }
 
     .btn {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
+
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        // align-items: center;
+        // gap: 1rem;
+        @include flex(row, center, center, 1rem);
 
         button {
             padding: 1rem;
@@ -30,6 +32,7 @@
 
             &:hover {
                 background-color: $btnHoverColor;
+
             }
         }
     }

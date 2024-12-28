@@ -1,8 +1,15 @@
 import React from 'react'
+import ProductStyle from './Products.scss';
+import ProductCard from './ProductCard';
 
-const ProductList = () => {
+const ProductList = ({ products }) => {
     return (
-        <div>ProductList</div>
+        <div className={ProductStyle.card}>
+            {
+                products.map((product) => <ProductCard key={product.id}{...product} />
+                )
+            }
+        </div>
     )
 }
 
