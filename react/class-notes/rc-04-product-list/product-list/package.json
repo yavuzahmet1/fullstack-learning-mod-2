@@ -35,6 +35,8 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.6.3"
+    "@testing-library/jest-dom": "^6.6.3",
+    "sass": "^1.83.0",
+    "scss": "^0.2.4"
   }
 }
