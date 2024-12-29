@@ -1,5 +1,6 @@
+import './Products.scss';
 
-const ProductCard = ({ price, title, id, image }) => {
+const ProductCard = ({ price, title, image }) => {
     return (
         <div className="card" >
             <div className='price'>

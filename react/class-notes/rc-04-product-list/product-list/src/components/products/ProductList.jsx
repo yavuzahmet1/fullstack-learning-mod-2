@@ -1,10 +1,10 @@
 import React from 'react'
-import ProductStyle from './Products.scss';
+import './Products.scss';
 import ProductCard from './ProductCard';
 
 const ProductList = ({ products }) => {
     return (
-        <div className={ProductStyle.card}>
+        <div className='products-list'>
             {
                 products.map((product) => <ProductCard key={product.id}{...product} />
                 )
