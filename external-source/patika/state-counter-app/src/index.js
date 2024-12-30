@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import InputExample from './components/InputExample';
+import ClaruswayTryIt from './components/ClaruswayTryIt';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <InputExample />
     <App />
+    <ClaruswayTryIt />
   </React.StrictMode>
 );
 
