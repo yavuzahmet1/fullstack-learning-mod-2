@@ -1,24 +1,57 @@
-import React from 'react'
+import React from "react";
 
 const Events = () => {
-    const handleClick = (event) => {
-        alert("clicked")
-        console.log(event.target.innerHTML)
-    }
 
-    const changeMessage = () => {
-        let message = "Hello chort 18"
+    let message=""
 
-    }
-    return (
-        <div>
-            <h2 className='text-black display-4 bg-warning'>React Events</h2>
-            <button onClick={handleClick} className='btn btn-primary m-3'>Click</button>
-            <button onClick={handleClick} className='btn btn-danger m-3 '>Delete</button>
-            <button onClick={changeMessage} className='btn btn-success m-3 '>Message Write</button>
-            <p>This Area </p>
+  const handleTikla = (e) => {
+    alert("Tıklandı");
+    console.log("event çalıştı");
+    console.log(e);
+  };
 
-            {/* //! message console'da guncellendigini ancak DOM'da guncellenmedigini gorduk.
+  const mesajYaz = (msg) => {
+    console.log(msg);
+  };
+
+  const degistir=()=>{
+    message="Merhaba Cohort 18 in güzel insanları"
+    console.log(message)
+  }
+
+  return (
+    <div>
+      <h2 className="text-black display-4">React Events</h2>
+      {/* ************************************************************************** */}
+      {/* 1.yöntem ( en sık kullanacağımız- referansını çağırma) */}
+      <button onClick={handleTikla} className="btn btn-primary m-2">
+        TIKLA
+      </button>
+      {/* Bu şekilde bir kullanım sayfa yenilendiğinde çalışmasınıa sebep olacak.Bazı durumlarda da sonsuz döngüye sokacaktır */}
+      {/* <button onClick={handleTikla()} className="btn btn-primary m-2" >TIKLA</button> */}
+
+      {/* ************************************************************************** */}
+
+      {/*2. Doğrudan çağırma - callback function kullanarak*/}
+      <button onClick={() => alert("silindi")} className="btn btn-danger m-2">
+        SİL
+      </button>
+
+      {/* Parametre kullanımı */}
+      <button
+        className="btn btn-success"
+        onClick={() => mesajYaz("Parametre gönderimi yapıldı")}
+      >
+        Mesaj Yaz
+      </button>
+      {/* <button className="btn btn-success" onClick={mesajYaz("Parametre gönderimi yapıldı")} >Mesaj Yaz</button> */}
+
+      <button className="btn btn-secondary m-2" onClick={degistir}  >DEĞİŞTİR</button>
+      <p>O mesaj buraya gelecek:{message}</p>
+    </div>
+
+/* -------------------------------------------------------------------------- */
+//! message console'da guncellendigini ancak DOM'da guncellenmedigini gorduk.
 //* Bunun sebebi REACT'in aksi belirtilmedigi surece elementleri
 //* static olarak kabul etmesinden kaynaklanir.
 
@@ -31,10 +64,13 @@ const Events = () => {
 //? 2. Statefull Classes (Class Components).
 
 //? Biz su ana kadar uygulamalarimizda Fonksiyonel Component'leri kullandik.
-//? Yaygin kullanim Fonksiyonel Component'lerdir. */}
+//? Yaygin kullanim Fonksiyonel Component'lerdir.
 
-        </div>
-    )
-}
+/* -------------------------------------------------------------------------- */
 
-export default Events
+
+
+  );
+};
+
+export default Events;
