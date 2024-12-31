@@ -1,6 +1,6 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Doctors from './components/Doctors';
+import bootstrap from 'bootstrap'
+
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div className='header'>
         <h1 className='header'>CLARUS HOSPITAL</h1>
       </div>
-      <Doctors />
+
     </div>
 
   );
