@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [firstName, setFirstName] = useState("");
@@ -24,10 +25,11 @@ function App() {
 
   return (
     <>
-      <div><button onClick={() => setFirstName("Halis")}>Cahange Name</button></div>
+      <div><button className='btn btn-success' onClick={() => setFirstName("Halis")}>Cahange Name</button></div>
 
-      <div><button onClick={() => setLastName("Muhlis")}>Cahange Last LastName</button></div>
-
+      <div><button className='btn btn-success mt-5' onClick={() => setLastName("Muhlis")}>Cahange Last LastName</button></div>
+      <h1 className="text-center text-primary mt-5">Hello, Bootstrap!</h1>
+      <button className="btn btn-success">Click Me</button>
     </>
   );
 }
