@@ -1,5 +1,45 @@
 export const data = [
   {
+    name: "Alperen Şengün",
+    img: "https://images.eurohoops.net/2023/03/5d55a2d1-alperen-sengun-houston-rockets.jpg",
+    statistics: [
+      "38,387 points",
+      "17,440 rebaunds",
+      "5,660 assist",
+      "19 All Star",
+    ],
+  },
+  {
+    name: "Ömer Faruk Yurtseven",
+    img: "https://images.eurohoops.net/2022/01/791aecb8-%C3%96mer-faruk-yurtseven-atlanta-hawks-miami-heat.jpg",
+    statistics: [
+      "38,387 points",
+      "17,440 rebaunds",
+      "5,660 assist",
+      "19 All Star",
+    ],
+  },
+  {
+    name: "Furkan Korkmaz",
+    img: "https://images.eurohoops.net/2023/01/dc8943e3-furkan-korkmaz.jpg",
+    statistics: [
+      "38,387 points",
+      "17,440 rebaunds",
+      "5,660 assist",
+      "19 All Star",
+    ],
+  },
+  {
+    name: "Onur Alp Bitim",
+    img: "https://images.eurohoops.net/2023/10/6a96ba88-onuralp-bitim.jpeg",
+    statistics: [
+      "38,387 points",
+      "17,440 rebaunds",
+      "5,660 assist",
+      "19 All Star",
+    ],
+  },
+  {
     name: "Kareem Abdul-Jabbar",
     img: "https://s22928.pcdn.co/wp-content/uploads/2018/03/Kareem-Abdul-Jabbar.jpg",
     statistics: [

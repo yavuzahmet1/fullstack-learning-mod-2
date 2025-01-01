@@ -9,12 +9,14 @@ const PlayerCard = ({ img, name, statistics }) => {
     }
     return (
         <div>
-            <Card onClick={change}>
+            <Card
+                className='player-card rounded-4 m-auto'
+                onClick={change}>
                 {imgShow ? (
                     <img variant="top" src={img} className='player-img' />) : (
                     <ul className='m-auto'>
                         {statistics.map((item, index) => {
-                            return <li>{item}</li>
+                            return <li className='h5 text-start list-unstyled'>{item}</li>
                         })}
                     </ul>
                 )
