@@ -1,0 +1,13 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 110px;
+}
+
+.modalsCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

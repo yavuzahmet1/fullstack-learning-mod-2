@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  border-bottom: 3px solid #172c05;
+}
+
+.mainTitle {
+  color: #2b6308;
+  font-size: 3rem;
+  padding: 15px 0;
+  text-shadow: 5px 5px 10px #2b6308;
+}
+
+.secondTitle {
+  color: #400101;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-shadow: 5px 5px 10px #400101;
+}

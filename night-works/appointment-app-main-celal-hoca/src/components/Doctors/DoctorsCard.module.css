@@ -1,0 +1,24 @@
+.card {
+  width: 190px;
+  margin: 0 40px 40px 40px;
+}
+
+img {
+  width: 190px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  padding: 2px;
+  border: 2px solid rgb(221, 218, 218);
+  border-radius: 10px;
+}
+
+img:hover {
+  transform: scale(1.05);
+  border-color: #172c05;
+}
+
+h4,
+h5 {
+  padding: 5px 0;
+  text-align: center;
+}
