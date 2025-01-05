@@ -1,7 +1,7 @@
 import Csharp from "../assets/csharp.png"
-import Java from './assets/java.png';
-import Sql from './assets/sql.png';
-import Web from './assets/web.png';
+import Java from '../assets/java.png';
+import Sql from '../assets/sql.png';
+import Web from '../assets/web.png';
 
 export const courses = [
     {
