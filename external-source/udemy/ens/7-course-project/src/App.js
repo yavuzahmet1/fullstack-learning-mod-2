@@ -1,24 +1,24 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
-import { courses } from './helper/data.js';
-import Course from './components/Course.jsx';
-import "./css/Course.css"
-
-
-
+// import { useState } from 'react'
+import './App.css'
+import Header from './components/Header'
+import { courses } from './helper/data'
+import Course from './components/Course'
+import './css/Course.css';
 function App() {
-  return (
-    <div className="App">
-      <Header />
 
-      {
-        courses?.map(course => {
-          return <Course key={course.id} course={course} />
-        })
-      }
+  return (
+    <div>
+      <Header />
+      <div className='course-main'>
+        {
+          courses?.map((course) => (
+            <Course key={course.id} course={course} />
+          ))
+        }
+      </div>
     </div>
-  );
+
+  )
 }
 
-export default App;
+export default App

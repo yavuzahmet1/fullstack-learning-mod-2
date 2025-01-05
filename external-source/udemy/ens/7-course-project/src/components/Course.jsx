@@ -1,18 +1,13 @@
-import React from 'react'
-
-
-
-const Course = ({ course }) => {
-    const { title, image, description, link, price } = course
+function Course({ course }) {
+    const { title, description, price, link, image } = course;
     return (
-        <div className='card-container'>
-            <div className='card'>
-                <img src={image} alt="img" />
-                <h3>{title}</h3>
-                <p>{description}</p>
-                <p>{price}</p>
-                <a href={link}>Purhase</a>
-            </div>
+        <div className='course'>
+            <img src={image} width={220} height={110} alt="img" />
+            <h4 className='course-title'>{title}</h4>
+            <p className='course-desc'>{description}</p>
+            <h3 className='course-price'>{price} ₺</h3>
+            <div className='course-link'><a style={{ textDecoration: 'none' }} href={link}>satın almak için</a></div>
+
         </div>
     )
 }
