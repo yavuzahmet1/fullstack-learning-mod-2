@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container"
 import Image from "react-bootstrap/Image"
-import logo from "../assets/logo.png"
+import logo from "../assets/tff.png"
 
 const Header = () => {
     return (
