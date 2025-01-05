@@ -1,8 +1,13 @@
 import Container from "react-bootstrap/Container"
+import Header from "./components/Header";
+import Legends from "./components/Legends";
 
 function App() {
   return (
-    <Container></Container>
+    <Container className="text-center mt-5">
+      <Header />
+      <Legends />
+    </Container>
   );
 }
 

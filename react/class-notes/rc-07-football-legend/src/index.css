@@ -5,10 +5,18 @@
 }
 
 body {
-  background-image: url("./assets/bg-image.jpg");
+  background-image: url("./assets/stadyum2.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  color: #101415;
+  background-color: rgba(250, 251, 251, 0.5);
+  padding: 0.3rem;
+  border-radius: 1rem;
+  display: inline-block;
 }
