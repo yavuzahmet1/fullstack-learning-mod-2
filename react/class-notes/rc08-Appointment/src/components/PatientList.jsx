@@ -2,6 +2,11 @@ import React from "react";
 import { FaTimesCircle } from "react-icons/fa";
 const PatientList = ({ hastalar, setHastalar }) => {
 
+  
+    // child a ve parent a aynı anda onclick verilemez, birine onDoubleClick verilebilir. 
+    // hastalardan birine çift tıklayınca, hastalar dizisinden tıklananı map ile bulup, o elemanın diğer key lerini ... ile değiştirmeden, sadece isDone ını override ettik, değiştirdik
+    //silme olayı database yoksa filterla yapılır, dizide filterla dolaş tıklamadıklarım kalsın
+    
   return (
     <div>
       {
