@@ -11,10 +11,16 @@ const Home = () => {
 
   const doctorClick = (id) => {
 
+    setDoctors(doctors.filter((a) => a.id === id));
+
+    setMagic(false)
+
+    setHastalar(hastalar.filter((a) => a.myDoctor === doctors[0].doctorName))
+
   }
 
   return (
-    <div style={{ display: "block" }}>
+    <div style={{ display: magic ? "block" : "flex" }}>
       <div>
         <header>
           <h1>HOSPITAL</h1>
@@ -38,8 +44,7 @@ const Home = () => {
 
           </div>
         </header>
-
-        {/* <AddPatient /> */}
+        {!magic && <AddPatient hastalar={hastalar} setHastalar={setHastalar} doctor={doctors} />}
       </div>
 
       <PatientList hastalar={hastalar} setHastalar={setHastalar} />
