@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Button from 'react-bootstrap/Button';
 
 const UseEffect = () => {
 
@@ -29,9 +30,10 @@ const UseEffect = () => {
         <div >
 
             <p className='fw-bold fs-5 m-5' style={{ color: color }}>Count : {count}</p>
-            <button variant="secondary" className='btn btn-secondary m-2' onClick={addCount}>Add</button>
-            <button className='btn btn-danger' onClick={subractCount}>Subract</button><br />
-            <button className='btn btn-warning fw-bolder' onClick={changeColor}>Change Color</button>
+            <Button variant="secondary" className='btn btn-secondary m-2' onClick={addCount}>Add</Button>
+            <Button className='btn btn-danger' onClick={subractCount}>Subract</Button><br />
+            <Button className='btn btn-warning fw-bolder' onClick={changeColor}>Change Color</Button>
+
         </div >
     )
 }
