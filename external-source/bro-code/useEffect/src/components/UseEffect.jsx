@@ -3,12 +3,13 @@ import React, { useEffect, useState } from 'react'
 const UseEffect = () => {
 
     const [count, setCount] = useState(0);
-    // const [subractCount, setsubractCount] = useState(0)
     const [color, setColor] = useState("green")
-
+    document.title = `Count : ${count} ${color}`;
     useEffect(() => {
-        document.title = `Count : ${count}`;
-        console.log("My counter program")
+
+        return () => {
+            //Some Clean up Code here
+        }
     }, [count, color]);
 
 
@@ -22,13 +23,15 @@ const UseEffect = () => {
     const changeColor = () => {
         setColor(c => c === "green" ? "red" : "green")
     }
-    return (
-        <div>
 
-            <p style={{ color: color }}>Count : {count}</p>
-            <button onClick={addCount}>Add</button>
-            <button onClick={subractCount}>Subract</button><br />
-            <button onClick={changeColor}>Change Color</button>
+
+    return (
+        <div >
+
+            <p className='fw-bold fs-5 m-5' style={{ color: color }}>Count : {count}</p>
+            <button variant="secondary" className='btn btn-secondary m-2' onClick={addCount}>Add</button>
+            <button className='btn btn-danger' onClick={subractCount}>Subract</button><br />
+            <button className='btn btn-warning fw-bolder' onClick={changeColor}>Change Color</button>
         </div >
     )
 }
