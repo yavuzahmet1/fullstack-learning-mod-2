@@ -1,7 +1,8 @@
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
+import axios from "axios";
 
-const TutorialList = ({ tutorials }) => {
+const TutorialList = ({ tutorials, getTutorials }) => {
     // const tutorials = [
     //     {
     //         id: 1,
@@ -15,8 +16,14 @@ const TutorialList = ({ tutorials }) => {
     //     },
     // ];
 
-    const deleteTutorials = (id) => {
-        console.log(id)
+    const deleteTutorials = async (id) => {
+        try {
+            await axios.delete(`${URL}${id}/`)
+        } catch (error) {
+            console.log(error)
+        } finally {
+            getTutorials()
+        }
     }
 
     return (

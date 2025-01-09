@@ -11,6 +11,8 @@ const AddTutorial = ({ getTutorials }) => {
         e.preventDefault()
         console.log(title, description);
         postTutorial({ title, description })
+        setTitle("");
+        setDescription("");
     }
     const postTutorial = async (newTutorial) => {
         try {
@@ -32,6 +34,7 @@ const AddTutorial = ({ getTutorials }) => {
                     <input
                         type="text"
                         className="form-control"
+                        value={title}
                         onChange={(e) => setTitle(e.target.value)}
                         id="title"
                         placeholder="Enter your title"
@@ -45,6 +48,7 @@ const AddTutorial = ({ getTutorials }) => {
                     <input
                         type="text"
                         className="form-control"
+                        value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         id="desc"
                         placeholder="Enter your Description"
