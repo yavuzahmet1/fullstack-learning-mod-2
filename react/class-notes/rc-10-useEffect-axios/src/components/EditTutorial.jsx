@@ -3,33 +3,30 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 const EditTutorial = () => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     return (
         <>
-            import {"{"} useState {"}"} from 'react'; import Button from
-            'react-bootstrap/Button'; import Modal from 'react-bootstrap/Modal'; function
-            Example() {"{"}
-            const [show, setShow] = useState(false); const handleClose = () =&gt;
-            setShow(false); const handleShow = () =&gt; setShow(true); return ( &lt;&gt;
-            <button variant="primary" onclick="{handleShow}">
+            <Button variant="primary" onClick={handleShow}>
                 Launch demo modal
-            </button>
-            <modal show="{show}" onhide="{handleClose}">
-                <Modal.header closebutton="">
-                    <Modal.title>Modal heading</Modal.title>
-                </Modal.header>
-                <Modal.body>Woohoo, you are reading this text in a modal!</Modal.body>
-                <Modal.footer>
-                    <button variant="secondary" onclick="{handleClose}">
+            </Button>
+
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Modal heading</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
                         Close
-                    </button>
-                    <button variant="primary" onclick="{handleClose}">
+                    </Button>
+                    <Button variant="primary" onClick={handleClose}>
                         Save Changes
-                    </button>
-                </Modal.footer>
-            </modal>
-            );
-            {"}"}
-            export default Example;
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </>
 
     )

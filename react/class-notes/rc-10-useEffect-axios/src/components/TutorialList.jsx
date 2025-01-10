@@ -1,6 +1,10 @@
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import axios from "axios";
+import EditTutorial from "./EditTutorial";
+
+
+const URL = "https://tutorial-api.fullstack.clarusway.com/tutorials/";
 
 const TutorialList = ({ tutorials, getTutorials }) => {
     // const tutorials = [
@@ -26,6 +30,10 @@ const TutorialList = ({ tutorials, getTutorials }) => {
         }
     }
 
+    const modalOpen = () => {
+
+    }
+
     return (
         <div className="container mt-4">
             <table className="table table-striped">
@@ -48,7 +56,8 @@ const TutorialList = ({ tutorials, getTutorials }) => {
                                 <td>{title}</td>
                                 <td>{description}</td>
                                 <td className="text-center text-nowrap">
-                                    <FaEdit size={20} type="button" className="me-2 text-warning" />
+                                    <FaEdit size={20} type="button" className="me-2 text-warning"
+                                    />
                                     <AiFillDelete size={22} type="button" className="text-danger "
                                         onClick={() => deleteTutorials(id)}
                                     />
@@ -59,6 +68,7 @@ const TutorialList = ({ tutorials, getTutorials }) => {
 
                 </tbody>
             </table>
+            <EditTutorial />
         </div>
     );
 };
