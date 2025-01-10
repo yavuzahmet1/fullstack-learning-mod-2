@@ -8,7 +8,7 @@ const URL = "https://tutorial-api.fullstack.clarusway.com/tutorials/";
 const Home = () => {
     //!Component LifeCircle
     //*1-render
-    //*2-ComponentDidMount=>useEffect([])
+    //*2-ComponentDidMount=>useEffect([])=>{},[])
     //*3-componentDidUpdate => useEffect(()=>{},[variable])
 
     const [tutorials, setTutorial] = useState([])
