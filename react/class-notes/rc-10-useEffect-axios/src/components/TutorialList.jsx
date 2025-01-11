@@ -2,6 +2,7 @@ import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import axios from "axios";
 import EditTutorial from "./EditTutorial";
+import { useState } from "react";
 
 
 const URL = "https://tutorial-api.fullstack.clarusway.com/tutorials/";
@@ -19,6 +20,7 @@ const TutorialList = ({ tutorials, getTutorials }) => {
     //         description: "JS library for UI design",
     //     },
     // ];
+    const [editData, setEditData] = useState([])
 
     const deleteTutorials = async (id) => {
         try {
@@ -30,9 +32,7 @@ const TutorialList = ({ tutorials, getTutorials }) => {
         }
     }
 
-    const modalOpen = () => {
 
-    }
 
     return (
         <div className="container mt-4">
@@ -56,7 +56,12 @@ const TutorialList = ({ tutorials, getTutorials }) => {
                                 <td>{title}</td>
                                 <td>{description}</td>
                                 <td className="text-center text-nowrap">
-                                    <FaEdit size={20} type="button" className="me-2 text-warning"
+                                    <FaEdit size={20}
+                                        type="button"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#editModal"
+                                        className="me-2 text-warning"
+                                        onClick={() => setEditData(item)}
                                     />
                                     <AiFillDelete size={22} type="button" className="text-danger "
                                         onClick={() => deleteTutorials(id)}
@@ -65,10 +70,9 @@ const TutorialList = ({ tutorials, getTutorials }) => {
                             </tr>
                         )
                     })}
-
                 </tbody>
             </table>
-            <EditTutorial />
+            <EditTutorial editData={editData} getTutorials={getTutorials} />
         </div>
     );
 };
