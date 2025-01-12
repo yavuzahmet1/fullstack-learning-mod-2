@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <TodoCreate onCreateTodo={createTodo} />
-      <TodoList lists={todos} />
+      <TodoList todos={todos} />
     </div>
   );
 }

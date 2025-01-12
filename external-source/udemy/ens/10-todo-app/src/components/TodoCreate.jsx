@@ -6,6 +6,9 @@ import "../App.css"
 
 const TodoCreate = ({ onCreateTodo }) => {
     const [newTodo, setNewTodo] = useState("")
+    const clearInput = () => {
+        setNewTodo("")
+    }
     const createTodo = (e) => {
         if (!newTodo) return;
         const request = {
@@ -13,6 +16,7 @@ const TodoCreate = ({ onCreateTodo }) => {
             content: newTodo
         }
         onCreateTodo(request)
+        clearInput()
     }
     return (
         <div className='todo-create'>
@@ -23,6 +27,7 @@ const TodoCreate = ({ onCreateTodo }) => {
                     aria-describedby="inputGroup-sizing-sm"
                     placeholder='Enter Todo...'
                     onChange={(e) => setNewTodo(e.target.value)}
+                    value={newTodo}
                 />
             </InputGroup>
             <Button
