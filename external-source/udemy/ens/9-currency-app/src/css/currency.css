@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.currency-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    width: 70%;
+    height: 200px;
+}
+
+.from-currency-option,
+.to-currency-option,
+.amount {
+    border-radius: 1.2rem;
+    width: 5rem;
+    height: 1.7rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.amount {
+    background: transparent;
+}
+
+.head {
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    color: rgb(155, 165, 42);
+    font-family: "Roboto", serif;
+    font-style: extra-light;
+    background-color: rgb(51, 91, 91);
+
+}
+
+
+.btn {
+
+    color: blue;
+}
