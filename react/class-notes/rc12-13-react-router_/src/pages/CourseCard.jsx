@@ -6,7 +6,7 @@ const CourseCard = () => {
   //!react-bootstrap ten CourseCard componenti
   //!
 
-  const navigate = useNavigate()
+  const navigate=useNavigate()
   return (
     <Container className="text-center">
       <Row>

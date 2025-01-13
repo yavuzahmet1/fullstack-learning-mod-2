@@ -3,13 +3,19 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 //! lifeCycle - useEffect teki UseEffectAxios.jsx componenti
 const Teacher = () => {
-  const navigate = useNavigate()
+  const navigate=useNavigate()
+
   const [people, setPeople] = useState([]);
+
+
+
+ 
+
   const getData = async () => {
     const res = await axios("https://jsonplaceholder.typicode.com/users");
 
     setPeople(res.data);
-
+ 
   };
   useEffect(() => {
     getData();
@@ -25,7 +31,10 @@ const Teacher = () => {
               <img
                 src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${kisi.id}`}
                 alt=""
-                onClick={() => navigate(`/teacher/${kisi.id}`, { state: { kisi } })}
+
+// onClick={()=>navigate(`/teacher/${kisi.id}`, {state:{kisi}})}
+onClick={()=>navigate(`/teacher/${kisi.id}`)}
+
               />
               <h5>{kisi.name}</h5>
               <h6>{kisi.username} </h6>
