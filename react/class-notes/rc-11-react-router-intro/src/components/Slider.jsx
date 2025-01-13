@@ -8,7 +8,7 @@ const Slider = () => {
   // !!!!!!!!!!!
   //! fade=soluklaşarak diğer resme geç, autoPlay={true} otomatik resim değiş, interval={5000} 5 saniyede bir değiş. slide={false} otomatik geçişi iptal et
   return (
-    <Carousel fade autoPlay={true} interval={500}>
+    <Carousel fade autoPlay={true} interval={2000}>
       <Carousel.Item>
         <img className="w-100" src={isa} alt="" />
       </Carousel.Item>
