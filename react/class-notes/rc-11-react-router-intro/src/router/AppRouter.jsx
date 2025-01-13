@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ContactForm from "../pages/ContactForm";
 import NotFound from "../pages/NotFound";
 import Paths from "../pages/Paths";
+import CardDetails from "../pages/CardDetails";
 
 const AppRouter = () => {
   return (
@@ -22,6 +23,7 @@ const AppRouter = () => {
         <Route path="/teacher" element={<Teacher />} />
 
         <Route path="/courses" element={<CourseCard />} />
+        <Route path="/courses/:name" element={<CardDetails />} />
 
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/paths" element={<Paths />} />
