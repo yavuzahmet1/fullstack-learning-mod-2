@@ -11,12 +11,22 @@ function App() {
   }
   const deleteTodo = (todoId) => {
     setTodos([...todos.filter((item) => item.id !== todoId)])
-
   }
+
+  const updateTodo = (newTodo) => {
+    const updatedTodos = todos.map(todo => {
+      if (todo.id !== newTodo.id) {
+        return todo;
+      }
+      return newTodo;
+    })
+    setTodos([...updatedTodos])
+  }
+
   return (
     <div className="App">
       <TodoCreate onCreateTodo={createTodo} />
-      <TodoList todos={todos} onDeleteTodo={deleteTodo} />
+      <TodoList todos={todos} onDeleteTodo={deleteTodo} onUpdateTodo={updateTodo} />
     </div>
   );
 }
