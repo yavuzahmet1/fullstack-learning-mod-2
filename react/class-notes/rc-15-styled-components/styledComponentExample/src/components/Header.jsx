@@ -1,31 +1,37 @@
-import React from 'react'
+import React from "react";
+import DisplaySSS from "./styles/DisplaySSS";
+import ImageSSS, { LogoSSS } from "./styles/ImageSSS";
+import ButtonSSS, { DetayButton } from "./styles/ButonSSS";
 
 const Header = () => {
   return (
     <div>
-      <div>
-        <div>
-          <img src="./images/logo.png" width={200} alt="clarusway logo" />
-        </div>
-        <div>
-          <button>Apply Courses</button>
-          <button>Talk to Adviser</button>
-        </div>
+      <DisplaySSS>
+        <LogoSSS src="./images/logo.png" alt="" />
 
         <div>
-          <h1>The IT Career of Your Dreams Starts Here</h1>
-          <p>9:24
+          <ButtonSSS ahmet="red">Apply Courses</ButtonSSS>
+          <ButtonSSS recep>Talk to Adviser</ButtonSSS>
+        </div>
+      </DisplaySSS>
+
+      <DisplaySSS>
+        <div>
+          <h1> The IT Career of Your Dreams Starts Here </h1>
+
+          <p>
             Clarusway is a leading international software Bootcamp. Join a micro
             class online with other trainees and learn coding skills with a
-            highly-skilled instructor.</p>
-          <button>Start Your New Career</button>
-          <button>Details</button>
+            highly-skilled instructor.
+          </p>
+          <ButtonSSS recep>Start Your New Career</ButtonSSS>
+          <DetayButton>Details</DetayButton>
         </div>
-        <img src="./images/hero.jpg
-        " width={200} alt="" />
-      </div>
-    </div>
-  )
-}
 
-export default Header
+        <ImageSSS src="./images/hero.jpg" alt="" />
+      </DisplaySSS>
+    </div>
+  );
+};
+
+export default Header;
