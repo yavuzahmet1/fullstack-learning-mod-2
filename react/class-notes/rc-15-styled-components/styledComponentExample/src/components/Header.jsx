@@ -22,7 +22,7 @@ const Header = () => {
           <button>Details</button>
         </div>
         <img src="./images/hero.jpg
-        " alt="" />
+        " width={200} alt="" />
       </div>
     </div>
   )
