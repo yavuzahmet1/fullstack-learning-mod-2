@@ -6,15 +6,15 @@ const About = () => {
   return (
     <div>
 
-      <div>
-        <img src={codingSvg} alt=""/>
+      <AboutContainer>
+        <StyledImage src={codingSvg} alt="" />
 
-        <div>
+        <HeaderContainer>
           <h1>
             About Software Developer <span>AshleyMiller </span>
           </h1>
-        </div>
-        <div>
+        </HeaderContainer>
+        <InfoContainer>
           <h2>Hi, I'am Ashley Miller</h2>
           <h3>I’m currently learning Full-Stack Development Languages.</h3>
           <h4>
@@ -26,8 +26,8 @@ const About = () => {
             Ashley@clarusway.com
           </h2>
           {/* whatsapp://tel:3216541234 */}
-        </div>
-      </div>
+        </InfoContainer>
+      </AboutContainer>
     </div>
   );
 }
