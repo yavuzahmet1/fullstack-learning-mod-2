@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Clarusway Frontend Development Cohort 18 Workshop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This private workshop repository contains projects, hands-on training, coding challenges, and class-notes for the Clarusway Students of Frontend Cohort 17/24
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+The clarusway-workshop repository contains materials related to the IT trainings like projects, hands-on trainings, coding challenges, class-notes etc. in the following main areas.
 
-### `npm start`
+- [React Workshop](./react/README.md)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  - [REACT Code Challenges](./react/coding-challenges/README.md)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - [REACT Workshop Projects](./react/projects/README.md)
 
-### `npm test`
+  - [REACT Session Class-notes](./react/class-notes/README.md)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Typescript Workshop](./typescript/README.md)
 
-### `npm run build`
+  - [Typescript Workshop Hands-on Trainings](./typescript/hands-on/README.md)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - [Typescript Workshop Projects](./typescript/projects/README.md)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - [Typescript Session Class-notes](./typescript/class-notes/README.md)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Nextjs Workshop](./nextjs/README.md)
 
-### `npm run eject`
+  - [Nextjs Workshop Projects](./nextjs/projects/README.md)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Cypress Workshop](./cypress/README.md)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - [Cypress Workshop Projects](./cypress/projects/README.md)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [Full Stack Learning Path Teamwork Agendas](./teamwork-agendas/README.md)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Full Stack Learning Path Teamwork Agendas](./teamwork-agendas/README.md)
 
-## Learn More
+- [Sprint Evaluation](./sprint-evaluation/README.md)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - [Full Stack Learning Path Sprint Evaluation](./sprint-evaluation/README.md)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Rules & Policy
 
-### Code Splitting
+- This repo is read only for Students of Clarusway.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Every material within this repo is meant for building portfolios of students.
 
-### Analyzing the Bundle Size
+- Students of Clarusway can clone/download this repo to get the latest materials related to their trainings.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- After cloning or downloading this repo, students are recommended to create their own local relevant repos and work on them.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Once the student are done with their portfolio work, they will push the solutions to their own public GitHub repos to showcase their training.

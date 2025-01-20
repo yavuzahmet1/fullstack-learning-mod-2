@@ -1,0 +1,29 @@
+//*****************************************************
+//*   HOME PAGE
+//*****************************************************
+
+.home-bgImg-container{
+   @include bgImg(100vh, $main-bgImg-path);
+}
+
+.home{
+    // border: 2px solid red;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__name{
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #fff;
+        &--last{
+            color: red;
+            font-weight: 700;
+        }
+        
+    }
+    
+}

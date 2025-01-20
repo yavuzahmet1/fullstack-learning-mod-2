@@ -1,0 +1,14 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.App {
+  text-align: center;
+  background-color: rgb(197, 188, 182);
+  font-size: 2rem;
+}
+
+.hellopicture{
+  width: 50%;
+}

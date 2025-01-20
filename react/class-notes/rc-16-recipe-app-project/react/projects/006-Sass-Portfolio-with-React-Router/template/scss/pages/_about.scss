@@ -1,0 +1,52 @@
+//*****************************************************
+//*   ABOUT PAGE
+//*****************************************************
+
+.about-bgImg-container{
+    @include bgImg(50vh, $main-bgImg-path);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .about__bio-image{
+        text-align: center;
+
+        h2{
+            font-size: 3rem;
+            color: $secondary-color;
+        }
+
+        p{
+            font-size: 1.2rem;
+            margin: 2rem;
+            line-height: 1.5rem;
+        }
+    }
+
+}
+
+.about{
+    &__container{
+        // border: 2px solid red;
+        width: 70vw;
+        margin: 2rem auto;
+    }
+
+    .about__job{
+        margin: 1rem;
+        background-color: lighten($primary-color, 10%);
+        padding: 1rem;
+        border-bottom: 5px solid $secondary-color;
+
+        h2,h3{
+            margin: 0.5rem 0;
+
+        }
+
+        h6{
+            margin: 0.3rem 0;
+        }
+
+    }
+}

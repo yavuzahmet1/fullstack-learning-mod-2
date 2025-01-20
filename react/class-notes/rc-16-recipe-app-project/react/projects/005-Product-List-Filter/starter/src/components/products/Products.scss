@@ -1,0 +1,41 @@
+@import "../../scss/variables";
+
+.card {
+  overflow: hidden;
+  height: $cardHeight;
+  max-width: 350px;
+  min-width: 230px;
+  .card__over {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $cardBgColor;
+    color: darken($cardColor, 50%);
+    font-size: 1.2rem;
+    padding: $cardPadding;
+    border-radius: $borderRadius;
+    transform: translateX(100%);
+    transition: transform 0.7s ease-in-out;
+    z-index: 3;
+    height: 25%;
+    text-align: center;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &:hover .card__over {
+    transform: translateX(0%);
+  }
+  img {
+    width: 100%;
+    height: $cardHeight;
+    border-radius: $borderRadius;
+    filter: sepia(100%);
+  }
+  &:hover img {
+    filter: none;
+  }
+}
