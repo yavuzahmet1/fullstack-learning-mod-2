@@ -1,8 +1,16 @@
 import React from 'react'
+import Product from '../components/Product'
+import data from "../helper/data"
 
 const Products = () => {
     return (
-        <div>Products</div>
+        <div>
+            {
+                data && data.map((product) => (
+                    <Product key={product.id} product={product} />
+                ))
+            }
+        </div>
     )
 }
 

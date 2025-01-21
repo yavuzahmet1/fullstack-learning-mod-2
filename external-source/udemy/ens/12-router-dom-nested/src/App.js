@@ -8,6 +8,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import Header from './components/Header';
 import Employee from "./components/Employee"
 import Company from "./components/Company"
+import ProductDetails from './pages/ProductDetails';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/products' element={<Products />} />
+        <Route path='/product-details/:id' element={<ProductDetails />} />
         <Route path='/about' element={<About />} >
           <Route path='employee' element={<Employee />} />
           <Route path='company' element={<Company />} />
