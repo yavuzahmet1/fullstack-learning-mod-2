@@ -1,0 +1,37 @@
+.about-bgImg-container {
+  display: flex;
+  flex-direction: column;
+}
+.about-bgImg-container .about__bio-image {
+  text-align: center;
+}
+.about-bgImg-container .about__bio-image h2 {
+  font-size: 3rem;
+  color: #ff652f;
+}
+.about-bgImg-container .about__bio-image p {
+  font-size: 1.2rem;
+  margin: 2rem;
+  line-height: 1.5rem;
+}
+
+.about {
+  background-color: #272727;
+  height: 90vh;
+}
+.about__container {
+  width: 70vw;
+  margin: 2rem auto;
+}
+.about .about__job {
+  margin: 1rem;
+  background-color: #414141;
+  padding: 1rem;
+  border-bottom: 5px solid #ff652f;
+}
+.about .about__job h2, .about .about__job h3 {
+  margin: 0.5rem 0;
+}
+.about .about__job h6 {
+  margin: 0.3rem 0;
+}/*# sourceMappingURL=About.css.map */

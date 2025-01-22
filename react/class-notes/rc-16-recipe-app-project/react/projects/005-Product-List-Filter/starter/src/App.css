@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  min-height: 100vh;
+}/*# sourceMappingURL=App.css.map */
