@@ -1,51 +1,109 @@
-# Clarusway Frontend Development Cohort 18 Workshop
+<p>Clarusway<img align="right"
+  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
 
-This private workshop repository contains projects, hands-on training, coding challenges, and class-notes for the Clarusway Students of Frontend Cohort 17/24
+# Project - 09 : Recipe App (RP-09)
 
 ## Description
 
-The clarusway-workshop repository contains materials related to the IT trainings like projects, hands-on trainings, coding challenges, class-notes etc. in the following main areas.
+Project aims to create a Recipe App.
 
-- [React Workshop](./react/README.md)
+## Problem Statement
 
-  - [REACT Code Challenges](./react/coding-challenges/README.md)
+- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
 
-  - [REACT Workshop Projects](./react/projects/README.md)
+## Project Skeleton
 
-  - [REACT Session Class-notes](./react/class-notes/README.md)
+```
+06 - Recipe App (folder)
+|
+|----readme.md         # Given to the students (Definition of the project)
+SOLUTION
+├── public
+│     └── index.html
+├── src
+│    ├── components
+│    │       ├── header
+│    │       │     ├── Header.js
+│    │       │     ├── Form.js
+│    │       │     └── style.js
+│    │       └── navbar
+│    │             ├── Navbar.js
+│    │             └── style.js
+│    ├── pages
+│    │       ├── about
+│    │       │     ├── About.js
+│    │       │     └── style.js
+│    │       ├── details
+│    │       │     ├── Details.js
+│    │       │     └── style.js
+│    │       ├── login
+│    │       │     ├── Login.js
+│    │       │     └── style.js
+│    │       └── home
+│    │             ├── Home.js
+│    │             ├── RecipeCard.js
+│    │             └── style.js
+│    ├── router
+│    │       ├── AppRouter.js
+│    │       └── PrivateRouter.js
+│    ├── assets
+│    │       └── [images]
+│    ├── App.js
+│    ├── App.css
+│    ├── index.js
+│    └── index.css
+├── package.json
+└── yarn.lock
+```
 
-- [Typescript Workshop](./typescript/README.md)
+## Expected Outcome
 
-  - [Typescript Workshop Hands-on Trainings](./typescript/hands-on/README.md)
+![Project Snapshot](./food-search-app.gif)
 
-  - [Typescript Workshop Projects](./typescript/projects/README.md)
+## Objective
 
-  - [Typescript Session Class-notes](./typescript/class-notes/README.md)
+Build a Recipe App using ReactJS.
 
-- [Nextjs Workshop](./nextjs/README.md)
+### At the end of the project, following topics are to be covered;
 
-  - [Nextjs Workshop Projects](./nextjs/projects/README.md)
+- HTML
 
-- [Cypress Workshop](./cypress/README.md)
+- CSS
 
-  - [Cypress Workshop Projects](./cypress/projects/README.md)
+- JS
 
-- [Full Stack Learning Path Teamwork Agendas](./teamwork-agendas/README.md)
+- ReactJS
 
-- [Full Stack Learning Path Teamwork Agendas](./teamwork-agendas/README.md)
+### At the end of the project, students will be able to;
 
-- [Sprint Evaluation](./sprint-evaluation/README.md)
+- improve coding skills within HTML & CSS & JS & ReactJS.
 
-  - [Full Stack Learning Path Sprint Evaluation](./sprint-evaluation/README.md)
+- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
-## Rules & Policy
+## Steps to Solution
 
-- This repo is read only for Students of Clarusway.
+- Step 1: Create React App using `yarn create react-app recipe-app`or `npx create-react-app recipe-app`
 
-- Every material within this repo is meant for building portfolios of students.
+- Step 2: Signup `https://developer.edamam.com/edamam-docs-recipe-api` and get api key.
 
-- Students of Clarusway can clone/download this repo to get the latest materials related to their trainings.
+- Step 3 : Using api key and `axios` for getting data from `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal}`.
 
-- After cloning or downloading this repo, students are recommended to create their own local relevant repos and work on them.
+- Step 4: You are expected to code your project with **styled component**
+ 
+- Step 5: You can use Context API for Global State Management
 
-- Once the student are done with their portfolio work, they will push the solutions to their own public GitHub repos to showcase their training.
+- Step 6: You can get random login background image from `https://picsum.photos/1600/900`
+
+- Step 7: Add project gif to your project and README.md file.
+
+## Demo
+
+https://recipe-app-cw.vercel.app/
+
+## Notes
+
+- You can add additional functionalities to your app.
+
+- [Assets Folder](./assets/)
+
+**<p align="center">&#9786; Happy Coding &#9997;</p>**
