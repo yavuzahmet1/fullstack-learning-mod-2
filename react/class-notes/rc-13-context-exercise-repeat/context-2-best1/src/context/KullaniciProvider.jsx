@@ -4,35 +4,34 @@ import { useEffect } from "react";
 // import { useContext } from "react";
 import { useState } from "react";
 import { createContext } from "react";
+
+
+
 //!1- create context
-export const KullaniciContext=createContext()
+export const KullaniciContext = createContext()
+
+const KullaniciProvider = ({ children }) => {
+
+  const [users, setUsers] = useState([])
+
+  useEffect(() => {
+    fetch("https://api.github.com/users")
+      .then((res) => res.json()).then((veri) => setUsers(veri))
+  }, [])
 
 
+  const changeWidth = (id, px) => {
 
 
-const KullaniciProvider = ({children}) => {
+    setUsers(users.map((a) => a.id === id ? { ...a, width: px } : a))
 
-const[users,setUsers]=useState([])
-
-
-useEffect(()=>{
-fetch("https://api.github.com/users")
-.then((res)=>res.json()).then((veri)=>setUsers(veri))
-},[])
-
-
-const changeWidth=(id,px)=>{
-
-
-setUsers(users.map((a)=>a.id===id ? {...a, width:px}:a))
-
-}
+  }
 
 
 
   return (
-    <KullaniciContext.Provider value={{users,changeWidth}}>
-{children}
+    <KullaniciContext.Provider value={{ users, changeWidth }}>
+      {children}
 
 
     </KullaniciContext.Provider>

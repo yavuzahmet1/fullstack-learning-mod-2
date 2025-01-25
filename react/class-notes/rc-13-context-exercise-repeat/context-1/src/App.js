@@ -10,10 +10,11 @@ const App = () => {
 
   const [students, setStudents] = useState(data);
 
+  // eslint-disable-next-line no-unused-vars
   const changeColor = (id, newColor) => {
     setStudents(setStudents.map((a) => a.id === id ? { ...a, color: newColor } : a));
 
-
+    console.log(students)
 
     return (
       // 2-Bütün projeye gönderilmek üzere ilk home u göderilecek elemanlar ve Context sayfasıyla sarmallayalım yani privade edelim
