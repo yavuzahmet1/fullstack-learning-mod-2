@@ -19,7 +19,7 @@ export const Nav = styled.div`
 
 export const MenuLink = styled(Link)`
   /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri YEŞİL*/
-  background-color: green;
+  background-color: green ;
 
   padding: 1rem 2rem;
   cursor: pointer;
