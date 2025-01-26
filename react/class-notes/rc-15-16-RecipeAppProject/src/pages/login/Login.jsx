@@ -11,23 +11,23 @@ import {
 import mealSvg from "../../assets/meal.svg"
 import { RecipeContext } from "../../context/RecipeProvider";
 import { useNavigate } from "react-router-dom";
+
+
 const Login = () => {
-const{setUser,setPass,user,pass}=useContext(RecipeContext)
 
+  const { setUser, setPass, user, pass } = useContext(RecipeContext)
 
+  const navigate = useNavigate()
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
 
-const navigate=useNavigate()
+    localStorage.setItem("username", user)
+    localStorage.setItem("password", pass)
 
-const handleSubmit=(e)=>{
-  e.preventDefault()
+    navigate("/home")
 
-  localStorage.setItem("username",user)
-  localStorage.setItem("password",pass)
-
-navigate("/home")
-
-}
+  }
 
 
   return (
