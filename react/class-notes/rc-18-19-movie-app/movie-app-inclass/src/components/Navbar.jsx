@@ -8,8 +8,12 @@ import {
 import { Link } from "react-router-dom";
 
 import avatar from "../assets/icons/avatar.png";
+import { useContext } from "react";
+import { AuthContextt } from "../context/AuthContext";
 
 export default function Navbar() {
+
+  const { exit, currentUser } = useContext(AuthContextt)
 
   return (
     <>
@@ -26,7 +30,8 @@ export default function Navbar() {
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
               <h5 className="mr-2 capitalize ">
-                Ahmet YAVUZ
+                {currentUser?.displayName}
+
               </h5>
 
 
@@ -37,7 +42,7 @@ export default function Navbar() {
                     <span className="sr-only">Open user menu</span>
                     <img
                       alt=""
-                      src={""}
+                      src={currentUser?.photoURL || avatar}
                       className="h-8 w-8 rounded-full"
                       referrerPolicy="no-referrer"
                     />
@@ -72,6 +77,7 @@ export default function Navbar() {
                     <span
 
                       className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 cursor-pointer"
+                      onClick={() => exit()}
                     >
                       Log out
                     </span>
