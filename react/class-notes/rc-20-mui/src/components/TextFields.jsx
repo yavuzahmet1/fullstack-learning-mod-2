@@ -1,5 +1,5 @@
 // import useState from 'react';
-import { FormControl, IconButton, Input, InputAdornment, InputLabel, MenuItem, OutlinedInput } from '@mui/material';
+import { Avatar, Button, FormControl, IconButton, Input, InputAdornment, InputLabel, MenuItem, OutlinedInput } from '@mui/material';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
@@ -116,6 +116,10 @@ export default function TextFields() {
                     />
                 </FormControl>
             </Box>
+            {/* hem sx hem color verdiğimizde, sx color u ezer ama hover olduğunda color u çalıştırır */}
+            <Button>
+                <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+            </Button>
         </div >
     );
 }
