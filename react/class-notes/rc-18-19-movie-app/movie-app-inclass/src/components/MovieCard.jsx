@@ -11,7 +11,7 @@ const MovieCard = ({ id, title, overview, poster_path, vote_average }) => {
   return (
     <div
 
-      onClick={() => ("/details/" + id)}
+      onClick={() => navigate("/details/" + id)}
 
       className='movie' id='container'>
       <img loading='lazy' src={`https://image.tmdb.org/t/p/w1280${poster_path}`} alt=" movie card" />
