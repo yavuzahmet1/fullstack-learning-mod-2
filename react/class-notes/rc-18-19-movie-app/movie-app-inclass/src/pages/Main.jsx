@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MovieContextt } from '../context/MovieContext'
+import MovieCard from '../components/MovieCard';
 
 const Main = () => {
+  const { movies } = useContext(MovieContextt);
   return (
-    <div>Main</div>
+    <div className="flex justify-center flex-wrap">
+      {
+        movies.map((movie) => (
+          <MovieCard key={movie.id} {...movie} />
+
+
+        ))
+      }
+
+    </div>
   )
 }
 
