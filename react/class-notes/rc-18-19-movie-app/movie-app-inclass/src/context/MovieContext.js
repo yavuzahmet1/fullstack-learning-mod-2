@@ -10,17 +10,17 @@ const MovieContext = ({ children }) => {
   const API_KEY = process.env.REACT_APP_TMDB_KEY;
   const BASE_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}`;
 
-  const getMovies = () => {
-    axios.get(BASE_URL).then((res) => setMovies(res.data.results))
+  const getMovies = (API) => {
+    axios.get(API).then((res) => setMovies(res.data.results))
   }
 
   useEffect(() => {
-    getMovies()
+    getMovies(BASE_URL)
 
   }, [])
 
   return (
-    <MovieContextt.Provider value={{ movies }}>
+    <MovieContextt.Provider value={{ movies, getMovies }}>
       {children}
     </MovieContextt.Provider>
   )
