@@ -21,6 +21,8 @@ const AuthContext = ({ children }) => {
   const navigate = useNavigate()
 
   const createUser = async (email, password, displayName) => {
+
+
     await createUserWithEmailAndPassword(auth, email, password);
 
     toastSuccess("register is success")
