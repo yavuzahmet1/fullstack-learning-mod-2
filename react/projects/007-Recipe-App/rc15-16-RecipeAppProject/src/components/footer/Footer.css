@@ -1,0 +1,21 @@
+.footer-div {
+  width: 80vw;
+  min-width: 400px;
+  background-color: White;
+  height: 50px;
+  font-size: 2rem;
+  color: #9d4d8c;
+  border: 0.5px solid #9d4d8c;
+  border-radius: 5px;
+  margin: 50px 40px 40px 60px;
+  /* height: 55px; */
+  display: flex;
+  justify-content: center;
+}
+
+.brand {
+  color: grey;
+  font-weight: bold;
+  font-style: italic;
+  margin-right: 1.5rem;
+}
