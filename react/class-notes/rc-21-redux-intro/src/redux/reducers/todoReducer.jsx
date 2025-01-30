@@ -13,15 +13,15 @@ const todoReducer = (
 ) => {
   switch (type) {
     case "EKLE":
-      return {yapilacaklar:[...state.yapilacaklar,{id:3,task:payload , completed:false}]};
+      return { yapilacaklar: [...state.yapilacaklar, { id: 3, task: payload, completed: false }] };
 
 
-      case "SIL":
-        return {yapilacaklar:state.yapilacaklar.filter((s)=>s!==payload)}
+    case "SIL":
+      return { yapilacaklar: state.yapilacaklar.filter((s) => s !== payload) }
 
 
-case "DEGISTIR":
-  return {yapilacaklar:state.yapilacaklar.map((a)=>a.task===payload ? {...a,completed: !a.completed}:a)}
+    case "DEGISTIR":
+      return { yapilacaklar: state.yapilacaklar.map((a) => a.task === payload ? { ...a, completed: !a.completed } : a) }
 
     default:
       return state;
