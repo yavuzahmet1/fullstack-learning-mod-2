@@ -18,11 +18,12 @@ const Navbar = () => {
           </Typography>
 
           (
-          <Button onClick={ } color="inherit">Logout</Button>
+          <Button color="inherit">Logout</Button>
           ) : (
           <Button color="inherit">signup</Button>
           )        </Toolbar>
       </AppBar>
+
     </Box>
   );
 

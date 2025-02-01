@@ -8,7 +8,7 @@ const Login = () => {
 
   return (
     <Container component="main" maxWidth="xs">
-      <Box onSubmit={handleSubmit}
+      <Box
         sx={{
           marginTop: 8,
           display: "flex",
@@ -37,7 +37,7 @@ const Login = () => {
             name="email"
             autoComplete="email"
             autoFocus
-            onChange={(e) => (email = e.target.value)}
+
           />
           <TextField
             margin="normal"
@@ -47,7 +47,7 @@ const Login = () => {
             label="Password"
             type="password"
             id="password"
-            onChange={(e) => password = e.target.value}
+
           />
 
           <Button

@@ -1,23 +1,23 @@
 import React from 'react'
-import {Avatar, Box, Button, Container, Link, TextField, Typography} from "@mui/material";
+import { Avatar, Box, Button, Container, Link, TextField, Typography } from "@mui/material";
 import { useDispatch, useSelector } from 'react-redux';
 import { kullaniciOlustur } from '../features/yetkiSlice';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
-  let {email,password}=useSelector((state)=>state.yetkiSlice)
+  let { email, password } = useSelector((state) => state.yetkiSlice)
 
-const navigate=useNavigate()
+  const navigate = useNavigate()
 
-const dispatch=useDispatch()
+  const dispatch = useDispatch()
 
-  const handleSubmit=(e)=>{
-e.preventDefault()
+  const handleSubmit = (e) => {
+    e.preventDefault()
 
-dispatch(kullaniciOlustur({email,password}))
+    dispatch(kullaniciOlustur({ email, password }))
 
-navigate("/")
+    navigate("/")
 
   }
 
@@ -53,7 +53,7 @@ navigate("/")
             name="email"
             autoComplete="email"
             autoFocus
-          onChange={(e)=>(email=e.target.value)}
+            onChange={(e) => (email = e.target.value)}
           />
           <TextField
             margin="normal"
@@ -63,7 +63,7 @@ navigate("/")
             label="Password"
             type="password"
             id="password"
-         onChange={(e)=>password=e.target.value}
+            onChange={(e) => password = e.target.value}
           />
 
           <Button

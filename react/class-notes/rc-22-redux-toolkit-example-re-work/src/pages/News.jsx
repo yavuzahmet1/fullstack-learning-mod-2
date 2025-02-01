@@ -1,5 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
-import loadingGif from "../assets/loading.gif";
+
 
 import { Box, Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 
@@ -8,8 +7,8 @@ const News = () => {
 
   return (
     <>
-      {loading ? (
-        <img src={loadingGif} alt="" height="800px" />
+      {"" ? (
+        <img src={""} alt="" height="800px" />
       ) : (
         <Box
           xs={{ d: "flex" }}
@@ -18,7 +17,7 @@ const News = () => {
           justifyContent="space-evenly"
           flexWrap="wrap"
         >
-          {haberler.map((haber) => (
+          {"haberler".map((haber) => (
             <Card sx={{ maxWidth: 345, height: 450, m: 5 }}>
               <CardMedia
                 sx={{ height: 140 }}
