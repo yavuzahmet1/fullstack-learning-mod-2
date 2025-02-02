@@ -9,9 +9,24 @@ import image from "../assets/hero.png";
 import { Link } from "react-router-dom";
 import AuthHeader from "../components/AuthHeader";
 import AuthImage from "../components/AuthImage";
+import { Formik } from "formik";
+import * as Yup from 'yup';
+import LoginForm from "../components/LoginForm";
 
 const Login = () => {
   const theme = useTheme();
+  const SignupSchema = Yup.object().shape({
+
+    email: Yup.string().email('Invalid email').required('Required'),
+    password: Yup
+      .string()
+      .required("Please enter your password")
+      .matches(
+        /^.*(?=.{8,})((?=.*[!@#$%^&*()\-_=+{};:,<.>]){1})(?=.*\d)((?=.*[a-z]){1})((?=.*[A-Z]){1}).*$/,
+        "Password must contain at least 8 characters, one uppercase, one number and one special case character"
+      )
+  });
+
 
   return (
     <Container maxWidth="lg">
@@ -40,6 +55,14 @@ const Login = () => {
           <Typography variant="h4" align="center" mb={4} color="secondary.main">
             SIGN IN
           </Typography>
+          <Formik
+            initialValues={{ email: "", password: "" }}
+            validationSchema={SignupSchema}
+            onSubmit={(value) => {
+              console.log(value)
+            }}
+            component={(props) => (<LoginForm {...props} />)}
+          />
 
           <Box sx={{ textAlign: "center", mt: 2, color: "secondary.main" }}>
             <Link to="/register">
@@ -50,7 +73,7 @@ const Login = () => {
 
         <AuthImage image={image} />
       </Grid>
-    </Container>
+    </Container >
   );
 };
 
