@@ -11,6 +11,9 @@ function Item({ id, title, price, category, description, image }) {
             </div>
 
         </ListItem>
+
+        31.25
+    https://www.youtube.com/watch?v=VNI8ee5JAuw&list=PLQFVrdkuSKRXTH-97vseXrDYXnKOHxId6&index=14
     )
 }
 
