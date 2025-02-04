@@ -26,7 +26,7 @@ function App() {
       <Items>
         {
           items.map((product) => (
-            <Item key={product.id} {...product} />
+            <Item key={product.id} image={product.image} title={product.title} price={product.price} description={product.description} category={product.category} />
           ))
         }
       </Items>
