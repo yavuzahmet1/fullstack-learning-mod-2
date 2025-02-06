@@ -11,6 +11,7 @@ const base_URL = "https://fakestoreapi.com"
 
 export const getAllProducts = createAsyncThunk("getAllProduct", async () => {
     const getData = await axios.get(`${base_URL}/products`)
+    console.log(getData)
     return getData.data
 })
 

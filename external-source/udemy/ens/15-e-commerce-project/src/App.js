@@ -1,9 +1,10 @@
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 import './App.css';
 import Header from './components/Header';
 import PageContainer from './container/PageContainer';
-import getAllProduct from "./redux/slices/productSlice"
+// import getAllProduct from "./redux/slices/productSlice"
 import ProductList from './components/ProductList';
+import RouterConfig from './config/RouterConfig';
 
 function App() {
   // const dispatch = useDispatch()
@@ -13,7 +14,8 @@ function App() {
     <div>
       <PageContainer >
         <Header />
-        <ProductList />
+        <RouterConfig />
+        {/* <ProductList /> */}
       </PageContainer>
     </div>
   );
