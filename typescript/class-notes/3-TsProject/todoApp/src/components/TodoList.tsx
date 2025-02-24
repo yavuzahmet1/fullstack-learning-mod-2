@@ -1,6 +1,10 @@
-import React from 'react'
 
-const TodoList = () => {
+
+interface ITodoList{
+    todos:ITodo;
+}
+
+const TodoList:React.FC<ITodoList> = (todos) => {
   return (
     <div>TodoList</div>
   )

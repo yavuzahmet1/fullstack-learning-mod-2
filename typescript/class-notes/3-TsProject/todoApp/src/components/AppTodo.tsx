@@ -1,10 +1,27 @@
-import React from 'react'
+import { Box, Button, Paper, TextField } from "@mui/material"
+import { useState } from "react"
 
-type Props = {}
+const AppTodo = () => {
+    const [task,setTask]=useState("")
 
-const AppTodo = (props: Props) => {
+    const handleChange=(e:React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>)=>{
+        setTask(e.target.value)
+    };
+
+    const handleSubmit=(e:React.FormEvent<HTMLFormElement>)=>{
+        e.preventDefault()
+        console.log(task)
+    }
+
   return (
-    <div>AppTodo</div>
+   <Paper>
+        <Box component="form" onSubmit={handleSubmit}>
+             <TextField onChange={handleChange}
+             />
+             <Button
+             type="submit">Save</Button>
+        </Box>
+   </Paper>
   )
 }
 
