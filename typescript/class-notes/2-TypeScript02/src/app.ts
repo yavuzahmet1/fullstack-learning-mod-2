@@ -231,3 +231,40 @@ class SalesEmployee extends Employee{
 
 const NewSalesEmployee=new SalesEmployee(12,"Ali","Ceo",230000,35,"dr3456y")
 console.log(NewSalesEmployee.id)
+
+//! INTERFACE
+// js karşılığı yoktur.
+//Interface, Ts de guclu bır aractır ve nesnelerin yapısını tanımlamak için kullanılır. kodu güvenli ve hataya daha az açık hale gelmesini sağlar.
+
+//! objelerle kullanımı
+//reacte objelerle interface- fonksiyonlarda type kullanımı daha yaygındır.
+interface user{
+    name:string;
+    age:number;
+    getting():void;
+}
+
+const User1:user={name:"Fatma",age:34,getting() {
+    console.log("Hello!!")
+},}
+
+//! Classlarda kullanımı
+
+interface Animal{
+    kind:string;
+    makeSound():void;
+}
+
+class Dog implements Animal{
+    kind: string;
+    
+    constructor(kind:string){
+        this.kind=kind;
+    }
+    makeSound(): void {
+        console.log(`${this.kind} make a sound`)
+    }
+}
+
+const myDog=
+
