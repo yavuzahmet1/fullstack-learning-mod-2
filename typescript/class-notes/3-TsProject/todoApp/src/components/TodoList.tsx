@@ -1,10 +1,10 @@
 
 
 interface ITodoList{
-    todos:ITodo;
+    todos:ITodo[];
 }
 
-const TodoList:React.FC<ITodoList> = (todos) => {
+const TodoList:React.FC<ITodoList[]> = ({todos}) => {
   return (
     <div>TodoList</div>
   )
