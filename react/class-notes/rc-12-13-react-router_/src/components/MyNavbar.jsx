@@ -58,7 +58,7 @@ const MyNavbar = () => {
               className="nav-link"
               to="/paths"
             >
-            Path
+              Path
             </NavLink>
 
             <a
